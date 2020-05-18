@@ -11,7 +11,7 @@ executor = Executor(app)
 def hello():
     return "Hello world"
 
-@app.route("/good")
+@app.route("/clever")
 def index():
     executor.submit(long_running_job)
     return "Submitted a job !"
